@@ -28,7 +28,7 @@ param version string = '16'
 
 resource serverName_resource 'Microsoft.DBforPostgreSQL/flexibleServers@2023-12-01-preview' = {
   name: serverName
-  location: solutionLocation
+  location: resourceGroup().location
   sku: {
     name: dbInstanceType
     tier: serverEdition
