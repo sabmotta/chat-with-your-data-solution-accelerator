@@ -959,7 +959,7 @@
             "value": "[parameters('azurePostgresDBAccountName')]"
           },
           "solutionLocation": {
-            "value": "eastus2"
+            "value": "swedencentral"
           },
           "managedIdentityObjectId": {
             "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, variables('rgName')), 'Microsoft.Resources/deployments', 'deploy_managed_identity'), '2022-09-01').outputs.managedIdentityOutput.value.objectId]"
